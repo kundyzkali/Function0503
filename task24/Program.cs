@@ -19,7 +19,7 @@ int SumNumbers(int num)
     int sum = 0;
     for  (int i = 1; i<= num; i++)
     {
-       sum += i; //  sum =sum+1
+       sum += i; //  sum =sum+i
     }
     return sum;
 }

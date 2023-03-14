@@ -8,19 +8,18 @@
 
 9012 -> 12
 
-Console.WriteLine("Введите натуральное число: ");
+Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int sum = SumNumbers(number);
-Console.WriteLine($"Cумма цифр в числе : {number} = {SumNumbers}");
+Console.WriteLine($"{GetSumAllDigits(number)}");
 
-int SumNumbers(int num)
+int GetSumAllDigits(int num)
 {
     int sum = 0;
-    while (number > 0)
- {
-    sum += number % 10;
-    number = number / 10;
+    while (num > 0)
+    {
+        sum += num % 10;
+        num = num / 10;
     }
     return sum;
 }
